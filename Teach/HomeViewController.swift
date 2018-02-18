@@ -36,7 +36,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "steph") as? UITableViewCell
-        cell?.textLabel?.text = "Student: \(names[indexPath.row])"
+        cell?.textLabel?.text = "\(names[indexPath.row])"
         return cell!
     }
     

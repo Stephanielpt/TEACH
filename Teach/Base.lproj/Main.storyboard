@@ -94,8 +94,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-f9-FqM">
-                                <rect key="frame" x="166" y="95" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Students" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-f9-FqM">
+                                <rect key="frame" x="145" y="95" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -127,16 +127,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Djl-f9-FqM" firstAttribute="leading" secondItem="PJg-0U-fAE" secondAttribute="leading" constant="166" id="4Tp-gM-HrO"/>
                             <constraint firstItem="Djl-f9-FqM" firstAttribute="top" secondItem="PJg-0U-fAE" secondAttribute="top" constant="75" id="EvJ-3p-cSz"/>
                             <constraint firstItem="5Vm-ZK-9JQ" firstAttribute="top" secondItem="PJg-0U-fAE" secondAttribute="top" id="HAu-Ye-WdT"/>
                             <constraint firstItem="5Vm-ZK-9JQ" firstAttribute="trailing" secondItem="PJg-0U-fAE" secondAttribute="trailing" id="Iup-N3-hTr"/>
-                            <constraint firstItem="PJg-0U-fAE" firstAttribute="trailing" secondItem="Djl-f9-FqM" secondAttribute="trailing" constant="167" id="ZOr-o8-njJ"/>
+                            <constraint firstItem="Djl-f9-FqM" firstAttribute="leading" secondItem="PJg-0U-fAE" secondAttribute="leading" constant="145" id="XfB-m8-Dvl"/>
                             <constraint firstItem="PJg-0U-fAE" firstAttribute="bottom" secondItem="v7u-BN-BfN" secondAttribute="bottom" constant="50" id="ZmX-kd-hII"/>
                             <constraint firstItem="v7u-BN-BfN" firstAttribute="top" secondItem="Djl-f9-FqM" secondAttribute="bottom" constant="30" id="aDW-cW-0qR"/>
                             <constraint firstItem="5Vm-ZK-9JQ" firstAttribute="leading" secondItem="PJg-0U-fAE" secondAttribute="leading" id="cJp-tu-nZx"/>
                             <constraint firstItem="PJg-0U-fAE" firstAttribute="trailing" secondItem="v7u-BN-BfN" secondAttribute="trailing" id="lgv-A2-Yxw"/>
                             <constraint firstItem="v7u-BN-BfN" firstAttribute="leading" secondItem="PJg-0U-fAE" secondAttribute="leading" id="pqr-yw-XPt"/>
+                            <constraint firstItem="PJg-0U-fAE" firstAttribute="trailing" secondItem="Djl-f9-FqM" secondAttribute="trailing" constant="145" id="t4Y-ES-2q1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PJg-0U-fAE"/>
                     </view>
@@ -456,6 +456,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="IgN-89-Uh1" id="FpT-bP-4JJ"/>
+                        <segue destination="38u-wj-DOw" kind="show" identifier="draw4" id="S8m-fY-Rf4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRu-iJ-qxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
