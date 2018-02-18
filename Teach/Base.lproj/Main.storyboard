@@ -442,8 +442,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Board" id="xtU-IG-FFn">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="b0b-5F-w06"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Next" id="ZUK-LM-qKy"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="b0b-5F-w06">
+                                            <connections>
+                                                <action selector="backPressed:" destination="Mia-Tj-RPV" id="O9G-ol-tey"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Next" id="ZUK-LM-qKy">
+                                            <connections>
+                                                <segue destination="Mia-Tj-RPV" kind="show" id="gN0-Re-vuB"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -544,12 +552,7 @@
                                     <navigationItem title="Board" id="fud-cL-WZX">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="yRG-z4-SIo">
                                             <connections>
-                                                <action selector="backPressed:" destination="38u-wj-DOw" id="MrO-iD-vbV"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Next" id="Rdm-eH-4KS">
-                                            <connections>
-                                                <action selector="toNextDraw:" destination="38u-wj-DOw" id="hkI-EF-vXq"/>
+                                                <action selector="backPressed:" destination="38u-wj-DOw" id="c0O-ze-de9"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
