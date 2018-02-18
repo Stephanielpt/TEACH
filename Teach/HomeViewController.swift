@@ -11,7 +11,7 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    var names = ["A","B","C","D", "E", "F"]
+    var names = ["Stephanie","Tyler","Spencer","Sara", "Glory", "Markie"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +36,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "steph") as? UITableViewCell
-        cell?.textLabel?.text = "Student - \(names[indexPath.row])"
+        cell?.textLabel?.text = "Student: \(names[indexPath.row])"
         return cell!
     }
     

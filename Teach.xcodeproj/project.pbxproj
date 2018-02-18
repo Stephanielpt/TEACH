@@ -10,6 +10,7 @@
 		125B67B3203973A500DCB9B1 /* DrawViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B67B2203973A500DCB9B1 /* DrawViewController1.swift */; };
 		125B67B7203996A600DCB9B1 /* DrawViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B67B6203996A600DCB9B1 /* DrawViewController2.swift */; };
 		125B67B92039A3E700DCB9B1 /* DrawViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B67B82039A3E700DCB9B1 /* DrawViewController3.swift */; };
+		125B67BB2039BE9E00DCB9B1 /* DrawViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B67BA2039BE9E00DCB9B1 /* DrawViewController4.swift */; };
 		12AD3E2A20389BA500D6A27B /* width.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E1420389BA500D6A27B /* width.png */; };
 		12AD3E2B20389BA500D6A27B /* DarkOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E1520389BA500D6A27B /* DarkOrange.png */; };
 		12AD3E2C20389BA500D6A27B /* Save-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E1620389BA500D6A27B /* Save-Small.png */; };
@@ -64,6 +65,7 @@
 		125B67B2203973A500DCB9B1 /* DrawViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController1.swift; sourceTree = "<group>"; };
 		125B67B6203996A600DCB9B1 /* DrawViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController2.swift; sourceTree = "<group>"; };
 		125B67B82039A3E700DCB9B1 /* DrawViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController3.swift; sourceTree = "<group>"; };
+		125B67BA2039BE9E00DCB9B1 /* DrawViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController4.swift; sourceTree = "<group>"; };
 		12AD3E1420389BA500D6A27B /* width.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = width.png; sourceTree = "<group>"; };
 		12AD3E1520389BA500D6A27B /* DarkOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkOrange.png; sourceTree = "<group>"; };
 		12AD3E1620389BA500D6A27B /* Save-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Save-Small.png"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				125B67B2203973A500DCB9B1 /* DrawViewController1.swift */,
 				125B67B6203996A600DCB9B1 /* DrawViewController2.swift */,
 				125B67B82039A3E700DCB9B1 /* DrawViewController3.swift */,
+				125B67BA2039BE9E00DCB9B1 /* DrawViewController4.swift */,
 				12E407AC20384BC600BB3D60 /* Assets.xcassets */,
 				12E407AE20384BC600BB3D60 /* LaunchScreen.storyboard */,
 				12E407B120384BC600BB3D60 /* Info.plist */,
@@ -376,6 +379,7 @@
 				12E61A41203893BF00DAED0E /* DrawViewController.swift in Sources */,
 				12E407A820384BC600BB3D60 /* ViewController.swift in Sources */,
 				125B67B92039A3E700DCB9B1 /* DrawViewController3.swift in Sources */,
+				125B67BB2039BE9E00DCB9B1 /* DrawViewController4.swift in Sources */,
 				12E407A620384BC600BB3D60 /* AppDelegate.swift in Sources */,
 				12E61A3F203859F800DAED0E /* HomeViewController.swift in Sources */,
 			);

@@ -1,5 +1,5 @@
 //
-//  DrawViewController3.swift
+//  DrawViewController4.swift
 //  Teach
 //
 //  Created by Stephanie Lampotang on 2/18/18.
@@ -9,7 +9,7 @@
 import UIKit
 //import Cocoa
 
-class DrawViewController3: UIViewController {
+class DrawViewController4: UIViewController {
     @IBOutlet var imageView: UIImageView!
     var lastPoint:CGPoint!
     var isSwiping:Bool!
@@ -36,10 +36,13 @@ class DrawViewController3: UIViewController {
         imageView.isMultipleTouchEnabled = true
     }
     
+
+    @IBAction func backPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
-    
-    @IBAction func toNextDraw(_ sender: Any) {
-        self.performSegue(withIdentifier: "draw4", sender: nil)
+    @IBAction func toNextBoard(_ sender: Any) {
+        self.performSegue(withIdentifier: "draw5", sender: nil)
     }
     
     // MARK: Touch Handling
@@ -138,4 +141,5 @@ class DrawViewController3: UIViewController {
      */
     
 }
+
 
