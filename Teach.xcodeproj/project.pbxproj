@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125B67B3203973A500DCB9B1 /* DrawViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B67B2203973A500DCB9B1 /* DrawViewController1.swift */; };
+		125B67B7203996A600DCB9B1 /* DrawViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B67B6203996A600DCB9B1 /* DrawViewController2.swift */; };
+		125B67B92039A3E700DCB9B1 /* DrawViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125B67B82039A3E700DCB9B1 /* DrawViewController3.swift */; };
 		12AD3E2A20389BA500D6A27B /* width.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E1420389BA500D6A27B /* width.png */; };
 		12AD3E2B20389BA500D6A27B /* DarkOrange.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E1520389BA500D6A27B /* DarkOrange.png */; };
 		12AD3E2C20389BA500D6A27B /* Save-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E1620389BA500D6A27B /* Save-Small.png */; };
@@ -29,8 +32,6 @@
 		12AD3E3D20389BA500D6A27B /* g.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E2720389BA500D6A27B /* g.png */; };
 		12AD3E3E20389BA500D6A27B /* Opacity.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E2820389BA500D6A27B /* Opacity.png */; };
 		12AD3E3F20389BA500D6A27B /* Red.png in Resources */ = {isa = PBXBuildFile; fileRef = 12AD3E2920389BA500D6A27B /* Red.png */; };
-		12AD3E412038F0E000D6A27B /* ReticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AD3E402038F0E000D6A27B /* ReticleView.swift */; };
-		12AD3E432038F10C00D6A27B /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AD3E422038F10C00D6A27B /* CanvasView.swift */; };
 		12E407A620384BC600BB3D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E407A520384BC600BB3D60 /* AppDelegate.swift */; };
 		12E407A820384BC600BB3D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E407A720384BC600BB3D60 /* ViewController.swift */; };
 		12E407AB20384BC600BB3D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E407A920384BC600BB3D60 /* Main.storyboard */; };
@@ -60,6 +61,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		125B67B2203973A500DCB9B1 /* DrawViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController1.swift; sourceTree = "<group>"; };
+		125B67B6203996A600DCB9B1 /* DrawViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController2.swift; sourceTree = "<group>"; };
+		125B67B82039A3E700DCB9B1 /* DrawViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController3.swift; sourceTree = "<group>"; };
 		12AD3E1420389BA500D6A27B /* width.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = width.png; sourceTree = "<group>"; };
 		12AD3E1520389BA500D6A27B /* DarkOrange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkOrange.png; sourceTree = "<group>"; };
 		12AD3E1620389BA500D6A27B /* Save-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Save-Small.png"; sourceTree = "<group>"; };
@@ -82,8 +86,6 @@
 		12AD3E2720389BA500D6A27B /* g.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = g.png; sourceTree = "<group>"; };
 		12AD3E2820389BA500D6A27B /* Opacity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Opacity.png; sourceTree = "<group>"; };
 		12AD3E2920389BA500D6A27B /* Red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Red.png; sourceTree = "<group>"; };
-		12AD3E402038F0E000D6A27B /* ReticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReticleView.swift; sourceTree = "<group>"; };
-		12AD3E422038F10C00D6A27B /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		12E407A220384BC600BB3D60 /* Teach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E407A520384BC600BB3D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E407A720384BC600BB3D60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -183,13 +185,14 @@
 				12E407A520384BC600BB3D60 /* AppDelegate.swift */,
 				12E407A920384BC600BB3D60 /* Main.storyboard */,
 				12E407A720384BC600BB3D60 /* ViewController.swift */,
-				12E61A40203893BF00DAED0E /* DrawViewController.swift */,
 				12E61A3E203859F800DAED0E /* HomeViewController.swift */,
+				12E61A40203893BF00DAED0E /* DrawViewController.swift */,
+				125B67B2203973A500DCB9B1 /* DrawViewController1.swift */,
+				125B67B6203996A600DCB9B1 /* DrawViewController2.swift */,
+				125B67B82039A3E700DCB9B1 /* DrawViewController3.swift */,
 				12E407AC20384BC600BB3D60 /* Assets.xcassets */,
 				12E407AE20384BC600BB3D60 /* LaunchScreen.storyboard */,
 				12E407B120384BC600BB3D60 /* Info.plist */,
-				12AD3E402038F0E000D6A27B /* ReticleView.swift */,
-				12AD3E422038F10C00D6A27B /* CanvasView.swift */,
 			);
 			path = Teach;
 			sourceTree = "<group>";
@@ -368,10 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12AD3E412038F0E000D6A27B /* ReticleView.swift in Sources */,
+				125B67B3203973A500DCB9B1 /* DrawViewController1.swift in Sources */,
+				125B67B7203996A600DCB9B1 /* DrawViewController2.swift in Sources */,
 				12E61A41203893BF00DAED0E /* DrawViewController.swift in Sources */,
-				12AD3E432038F10C00D6A27B /* CanvasView.swift in Sources */,
 				12E407A820384BC600BB3D60 /* ViewController.swift in Sources */,
+				125B67B92039A3E700DCB9B1 /* DrawViewController3.swift in Sources */,
 				12E407A620384BC600BB3D60 /* AppDelegate.swift in Sources */,
 				12E61A3F203859F800DAED0E /* HomeViewController.swift in Sources */,
 			);

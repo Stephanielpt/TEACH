@@ -1,15 +1,15 @@
 //
-//  DrawViewController.swift
+//  DrawViewController1.swift
 //  Teach
 //
-//  Created by Stephanie Lampotang on 2/17/18.
+//  Created by Stephanie Lampotang on 2/18/18.
 //  Copyright © 2018 Stephanie Lampotang. All rights reserved.
 //
 
 import UIKit
 //import Cocoa
 
-class DrawViewController: UIViewController {
+class DrawViewController1: UIViewController {
     @IBOutlet var imageView: UIImageView!
     var lastPoint:CGPoint!
     var isSwiping:Bool!
@@ -21,7 +21,14 @@ class DrawViewController: UIViewController {
     
     // Do any additional setup after loading the view.
     
-
+    @IBAction func backPressed(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func toNextDraw(_ sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "draw2", sender: nil)
+    }
+    
     // MARK: View Life Cycle
     
     override func viewDidLoad() {
@@ -36,16 +43,8 @@ class DrawViewController: UIViewController {
         imageView.isMultipleTouchEnabled = true
     }
     
-    @IBAction func backPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
-
-    @IBAction func toNextBoard(_ sender: Any) {
-        self.performSegue(withIdentifier: "draw1", sender: nil)
-    }
-
-    // MARK: Touch Handling
     
+    // MARK: Touch Handling
     
     func drawLineFrom(fromPoint: CGPoint, toPoint: CGPoint) {
         // 1
@@ -54,16 +53,16 @@ class DrawViewController: UIViewController {
         imageView.image?.draw(in: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height))
         
         // 2
-//        let path = CGMutablePath()
-//        path.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
-//        path.move(to: CGPoint(x: toPoint.x, y: toPoint.y))
-//
+        //        let path = CGMutablePath()
+        //        path.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
+        //        path.move(to: CGPoint(x: toPoint.x, y: toPoint.y))
+        //
         context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
         context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
         // 3
         context!.setLineCap(.round)
         context!.setLineWidth(3)
-       
+        
         context!.setBlendMode(.darken)
         
         // 4
@@ -130,13 +129,14 @@ class DrawViewController: UIViewController {
         }
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+
