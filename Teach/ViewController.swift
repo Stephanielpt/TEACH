@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 
     @IBAction func donePressed(_ sender: UIButton) {
         if(nameField.text!.count > 0){
-            welcomeName.text = "Welcome \(nameField.text!)"
+            welcomeName.text = "Welcome, \(nameField.text!)!"
             nextButton.alpha = 1
         }
         else{
@@ -40,6 +40,15 @@ class ViewController: UIViewController {
     @IBAction func changeScreen(_ sender: Any) {
         self.performSegue(withIdentifier: "home", sender: nil)
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is HomeViewController
+        {
+            if let vc = segue.destination as? HomeViewController
+            {vc.names = [nameField.text!]}
+        }
     }
 }
 

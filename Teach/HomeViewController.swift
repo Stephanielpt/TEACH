@@ -11,7 +11,8 @@ import UIKit
 class HomeViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-    var names = ["Stephanie","Tyler","Spencer","Sara", "Glory", "Markie"]
+//    var names = ["Stephanie","Tyler","Spencer","Sara", "Glory", "Markie"]
+    var names = [""]
     override func viewDidLoad() {
         super.viewDidLoad()
 

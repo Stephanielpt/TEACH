@@ -110,7 +110,7 @@ class DrawViewController: UIViewController {
     
     @IBAction func redMarker(_ sender: Any) {
         print("REEEDDDDDDDDDD")
-        (red!, green!, blue!) = (255, 0, 0)
+        (red!, green!, blue!) = (1, 0, 0)
     }
     @IBAction func pencilPressed(_ sender: Any) {
         print("pencil pressed")
