@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9b-lx-xi5">
-                                <rect key="frame" x="160" y="301" width="55" height="30"/>
+                                <rect key="frame" x="160" y="311" width="55" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="changeScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iCS-2V-R1I"/>
@@ -67,10 +67,10 @@
                             <constraint firstItem="NSz-iE-sOq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="gcb-IN-fYh"/>
                             <constraint firstItem="aWp-mr-cwf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4a-JH-g5D"/>
                             <constraint firstItem="vcP-PN-JC5" firstAttribute="top" secondItem="aWp-mr-cwf" secondAttribute="bottom" constant="30" id="hDG-El-d3u"/>
-                            <constraint firstItem="l9b-lx-xi5" firstAttribute="top" secondItem="0An-nY-rpK" secondAttribute="bottom" constant="30" id="nBz-EA-bep"/>
                             <constraint firstItem="l9b-lx-xi5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puu-wb-Lmt"/>
                             <constraint firstItem="0An-nY-rpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="qjL-gH-xwU"/>
                             <constraint firstItem="vcP-PN-JC5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rWm-5Z-Mkq"/>
+                            <constraint firstItem="l9b-lx-xi5" firstAttribute="top" secondItem="0An-nY-rpK" secondAttribute="bottom" constant="40" id="rbi-4E-uWO"/>
                             <constraint firstItem="NSz-iE-sOq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sAk-tB-7IR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -14,8 +14,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "beachBack")!)
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "beachBack")!)
         // Do any additional setup after loading the view, typically from a nib.
+        view.addBackground(imageName: "beachBack")
     }
 
 
