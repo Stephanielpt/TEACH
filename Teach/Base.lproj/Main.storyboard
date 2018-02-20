@@ -141,6 +141,7 @@
                         <viewLayoutGuide key="safeArea" id="PJg-0U-fAE"/>
                     </view>
                     <connections>
+                        <outlet property="navBar" destination="5Vm-ZK-9JQ" id="fSN-6s-Nry"/>
                         <outlet property="tableView" destination="v7u-BN-BfN" id="XRm-NC-tld"/>
                         <segue destination="gsA-Eo-fm0" kind="show" identifier="draw" id="toK-yE-xMl"/>
                     </connections>
@@ -248,6 +249,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="xnL-Ab-MvJ" id="P03-1j-X8v"/>
+                        <outlet property="navBar" destination="LRi-ub-Zp5" id="buI-f6-DCK"/>
                         <segue destination="PdS-k2-J8H" kind="show" identifier="draw1" id="50m-Zj-4ph"/>
                     </connections>
                 </viewController>
@@ -356,6 +358,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="EYs-d3-Gfc" id="ULB-y5-dhm"/>
+                        <outlet property="navBar" destination="jeY-tt-Bt8" id="k9s-7T-bq7"/>
                         <segue destination="Mia-Tj-RPV" kind="show" identifier="draw3" id="dQ8-KZ-MSa"/>
                     </connections>
                 </viewController>
@@ -674,6 +677,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="9MD-Et-xxV" id="vY4-Ad-AqV"/>
+                        <outlet property="navBar" destination="HeL-7f-gDb" id="qxX-D6-s1r"/>
                         <segue destination="H0W-gu-QHg" kind="show" identifier="draw2" id="Hc4-SP-Tnp"/>
                     </connections>
                 </viewController>

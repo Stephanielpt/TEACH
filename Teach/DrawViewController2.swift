@@ -11,6 +11,7 @@ import UIKit
 
 class DrawViewController2: UIViewController {
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet weak var navBar: UINavigationBar!
     var lastPoint:CGPoint!
     var isSwiping:Bool!
     var red:CGFloat!
@@ -34,6 +35,9 @@ class DrawViewController2: UIViewController {
         imageView.isUserInteractionEnabled = true
         
         imageView.isMultipleTouchEnabled = true
+        
+        let bluminesence = UIColor(displayP3Red: 19/255, green: 194/255, blue: 204/255, alpha: 1)
+        view.backgroundColor = bluminesence
     }
     
     @IBAction func backPressed(_ sender: Any) {

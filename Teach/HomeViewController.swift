@@ -10,13 +10,15 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource {
 
+    @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet weak var tableView: UITableView!
 //    var names = ["Stephanie","Tyler","Spencer","Sara", "Glory", "Markie"]
     var names = [""]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let bluminesence = UIColor(displayP3Red: 19/255, green: 194/255, blue: 204/255, alpha: 1)
+        view.backgroundColor = bluminesence
         tableView.dataSource = self
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "steph")

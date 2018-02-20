@@ -10,6 +10,7 @@ import UIKit
 //import Cocoa
 
 class DrawViewController1: UIViewController {
+    @IBOutlet weak var navBar: UINavigationBar!
     @IBOutlet var imageView: UIImageView!
     var lastPoint:CGPoint!
     var isSwiping:Bool!
@@ -41,6 +42,9 @@ class DrawViewController1: UIViewController {
         imageView.isUserInteractionEnabled = true
         
         imageView.isMultipleTouchEnabled = true
+        
+        let bluminesence = UIColor(displayP3Red: 19/255, green: 194/255, blue: 204/255, alpha: 1)
+        navBar.backgroundColor = bluminesence
     }
     
     
