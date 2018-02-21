@@ -32,7 +32,7 @@ class ViewController: UIViewController {
             nextButton.alpha = 1
         }
         else{
-            welcomeName.text = "Enter your name ple.."
+            welcomeName.text = "Enter your name please"
         }
     }
     
