@@ -52,7 +52,7 @@ class DrawViewController2: UIViewController {
 //    }
     
     // MARK: Touch Handling
-    
+    var i = 0
     
     func drawLineFrom(fromPoint: CGPoint, toPoint: CGPoint) {
         // 1
@@ -70,7 +70,50 @@ class DrawViewController2: UIViewController {
         // 3
         context!.setLineCap(.round)
         context!.setLineWidth(3)
-        
+        if i == 0 {
+            context!.setStrokeColor(red: 0, green: 0, blue: 0, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 1 {
+            context!.setStrokeColor(red: 105.0 / 255.0, green: 105.0 / 255.0, blue: 105.0 / 255.0, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 2 {
+            context!.setStrokeColor(red: 1, green: 0, blue: 0, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 3 {
+            context!.setStrokeColor(red: 0, green: 0, blue: 1, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 4 {
+            context!.setStrokeColor(red: 34.0 / 255.0, green: 139.0 / 255.0, blue: 34.0 / 255.0, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 5 {
+            context!.setStrokeColor(red: 0, green: 1, blue: 0, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 6 {
+            context!.setStrokeColor(red: 160/255, green: 1, blue: 1, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 7 {
+            context!.setStrokeColor(red: 165/255, green: 82/255, blue: 45/255, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 8 {
+            context!.setStrokeColor(red: 255/255, green: 165/255, blue: 0, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 9 {
+            context!.setStrokeColor(red: 1, green: 1, blue: 0, alpha: 1)
+            context!.setLineWidth(3)
+        }
+        if i == 10 {
+            context!.setStrokeColor(red: 1, green: 1, blue: 1, alpha: 1)
+            context!.setLineWidth(6)
+        }
         context!.setBlendMode(.darken)
         
         // 4
@@ -114,11 +157,45 @@ class DrawViewController2: UIViewController {
         (1.0, 1.0, 0),
         (1.0, 1.0, 1.0),
         ]
-    
+    @IBAction func blackMarker(_ sender: Any) {
+        i = 0
+    }
+    @IBAction func greyMarker(_ sender: Any) {
+        i = 1
+    }
     @IBAction func redMarker(_ sender: Any) {
         print("REEEDDDDDDDDDD")
-        (red!, green!, blue!) = (255, 0, 0)
+        i = 2
     }
+    @IBAction func blueMarker(_ sender: Any) {
+        i = 3
+    }
+    @IBAction func darkgreenMarker(_ sender: Any) {
+        i = 4
+    }
+    @IBAction func lightgreenMarker(_ sender: Any) {
+        i = 5
+    }
+    @IBAction func lightblueMarker(_ sender: Any) {
+        i = 6
+    }
+    @IBAction func brownMarker(_ sender: Any) {
+        i = 7
+    }
+    @IBAction func orangeMarker(_ sender: Any) {
+        i = 8
+    }
+    @IBAction func yellowMarker(_ sender: Any) {
+        i = 9
+    }
+    @IBAction func erase(_ sender: Any) {
+        i = 10
+    }
+    
+    //@IBAction func redMarker(_ sender: Any) {
+     //   print("REEEDDDDDDDDDD")
+    //    (red!, green!, blue!) = (255, 0, 0)
+    //}
     @IBAction func pencilPressed(_ sender: Any) {
         print("pencil pressed")
         var index = (sender as AnyObject).tag ?? 0

@@ -66,47 +66,47 @@ class DrawViewController: UIViewController {
         context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
         // 3
         context!.setLineCap(.round)
-        context!.setLineWidth(2)
+        context!.setLineWidth(3)
 
         if i == 0 {
             context!.setStrokeColor(red: 0, green: 0, blue: 0, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setLineWidth(3)
         }
         if i == 1 {
             context!.setStrokeColor(red: 105.0 / 255.0, green: 105.0 / 255.0, blue: 105.0 / 255.0, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setLineWidth(3)
         }
         if i == 2 {
             context!.setStrokeColor(red: 1, green: 0, blue: 0, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setLineWidth(3)
         }
         if i == 3 {
             context!.setStrokeColor(red: 0, green: 0, blue: 1, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setLineWidth(3)
         }
         if i == 4 {
-            context!.setStrokeColor(red: 51.0 / 255.0, green: 204.0 / 255.0, blue: 1, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setStrokeColor(red: 34.0 / 255.0, green: 139.0 / 255.0, blue: 34.0 / 255.0, alpha: 1)
+            context!.setLineWidth(3)
         }
         if i == 5 {
-            context!.setStrokeColor(red: 102/255, green: 204/255, blue: 0, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setStrokeColor(red: 0, green: 1, blue: 0, alpha: 1)
+            context!.setLineWidth(3)
         }
         if i == 6 {
-            context!.setStrokeColor(red: 102/255, green: 1, blue: 0, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setStrokeColor(red: 160/255, green: 1, blue: 1, alpha: 1)
+            context!.setLineWidth(3)
         }
         if i == 7 {
-            context!.setStrokeColor(red: 160/255, green: 82, blue: 45, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setStrokeColor(red: 165/255, green: 82/255, blue: 45/255, alpha: 1)
+            context!.setLineWidth(3)
         }
         if i == 8 {
-            context!.setStrokeColor(red: 1, green: 102, blue: 0, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setStrokeColor(red: 255/255, green: 165/255, blue: 0, alpha: 1)
+            context!.setLineWidth(3)
         }
         if i == 9 {
             context!.setStrokeColor(red: 1, green: 1, blue: 0, alpha: 1)
-            context!.setLineWidth(2)
+            context!.setLineWidth(3)
         }
         if i == 10 {
             context!.setStrokeColor(red: 1, green: 1, blue: 1, alpha: 1)
