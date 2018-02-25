@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="388" y="132.68365817091455"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Classroom-->
         <scene sceneID="jMj-zT-66a">
             <objects>
                 <viewController id="mOZ-fB-lEt" customClass="HomeViewController" customModule="Teach" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,45 +101,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Vm-ZK-9JQ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="dDa-wD-3o9"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Home" id="OHx-gw-u24">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="4ou-q9-dB9">
-                                            <connections>
-                                                <action selector="backPressed:" destination="mOZ-fB-lEt" id="gao-wC-4Go"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Draw!" id="QST-Lt-aHy">
-                                            <connections>
-                                                <action selector="toDrawSlide:" destination="mOZ-fB-lEt" id="KGi-YQ-3mU"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UFe-2A-6W0">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UFe-2A-6W0">
+                                <rect key="frame" x="0.0" y="200" width="375" height="467"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="UFe-2A-6W0" firstAttribute="centerX" secondItem="6WX-eU-GDq" secondAttribute="centerX" id="1jB-Cp-LQg"/>
+                            <constraint firstItem="UFe-2A-6W0" firstAttribute="top" secondItem="Djl-f9-FqM" secondAttribute="bottom" constant="40" id="7iA-SA-nNw"/>
                             <constraint firstItem="Djl-f9-FqM" firstAttribute="top" secondItem="PJg-0U-fAE" secondAttribute="top" constant="75" id="EvJ-3p-cSz"/>
-                            <constraint firstItem="5Vm-ZK-9JQ" firstAttribute="top" secondItem="PJg-0U-fAE" secondAttribute="top" id="HAu-Ye-WdT"/>
-                            <constraint firstItem="5Vm-ZK-9JQ" firstAttribute="trailing" secondItem="PJg-0U-fAE" secondAttribute="trailing" id="Iup-N3-hTr"/>
+                            <constraint firstItem="UFe-2A-6W0" firstAttribute="leading" secondItem="PJg-0U-fAE" secondAttribute="leading" id="GgF-lj-1hm"/>
+                            <constraint firstItem="UFe-2A-6W0" firstAttribute="trailing" secondItem="PJg-0U-fAE" secondAttribute="trailing" id="Tf3-7z-dza"/>
                             <constraint firstItem="Djl-f9-FqM" firstAttribute="leading" secondItem="PJg-0U-fAE" secondAttribute="leading" constant="145" id="XfB-m8-Dvl"/>
-                            <constraint firstItem="5Vm-ZK-9JQ" firstAttribute="leading" secondItem="PJg-0U-fAE" secondAttribute="leading" id="cJp-tu-nZx"/>
+                            <constraint firstItem="UFe-2A-6W0" firstAttribute="bottom" secondItem="PJg-0U-fAE" secondAttribute="bottom" id="pf8-N0-lao"/>
                             <constraint firstItem="PJg-0U-fAE" firstAttribute="trailing" secondItem="Djl-f9-FqM" secondAttribute="trailing" constant="145" id="t4Y-ES-2q1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PJg-0U-fAE"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Classroom" id="EDM-pQ-Mcp">
+                        <barButtonItem key="rightBarButtonItem" title="Draw!" id="V02-5k-II1">
+                            <connections>
+                                <action selector="toDrawSlide:" destination="mOZ-fB-lEt" id="kDj-XB-Iup"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="navBar" destination="5Vm-ZK-9JQ" id="fSN-6s-Nry"/>
                         <outlet property="tableView" destination="UFe-2A-6W0" id="nIg-6V-5Fd"/>
                         <segue destination="gsA-Eo-fm0" kind="show" identifier="draw" id="toK-yE-xMl"/>
                     </connections>
