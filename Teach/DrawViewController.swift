@@ -37,7 +37,12 @@ class DrawViewController: UIViewController {
         imageView.isMultipleTouchEnabled = true
         
         let bluminesence = UIColor(displayP3Red: 19/255, green: 194/255, blue: 204/255, alpha: 1)
-        navBar.backgroundColor = bluminesence
+        //navBar.backgroundColor = bluminesence
+        
+        
+//        let drawController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DrawViewControllerID") as? DrawViewController
+//        //present and dismiss
+//        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func backPressed(_ sender: Any) {
@@ -45,7 +50,10 @@ class DrawViewController: UIViewController {
     }
 
     @IBAction func toNextBoard(_ sender: Any) {
-        self.performSegue(withIdentifier: "draw1", sender: nil)
+        //self.performSegue(withIdentifier: "draw1", sender: nil)
+        let drawController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DrawViewControllerID") as? DrawViewController
+//        present(drawController!, animated: true, completion: nil)
+        navigationController?.pushViewController(drawController!, animated: true)
     }
 
     // MARK: Touch Handling
@@ -109,9 +117,7 @@ class DrawViewController: UIViewController {
             context!.setLineWidth(3)
         }
         if i == 10 {
-            context!.setStrokeColor(red: 1, green: 1, blue: 1, alpha: 1)
-            context!.setLineWidth(6)
-            
+//            context!.clear(_:)
         }
 
         context!.setBlendMode(.darken)
